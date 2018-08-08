@@ -1,0 +1,21 @@
+import os, socket, time
+def writehtmlfile():
+        code = """
+<html>
+<body>
+<p>Welcome to the HiC0 CTF Challenge! The challenge is not hard! this is beginner level, hve fun!</p>
+<a href="littledata/popup.js">hint</a>
+</body>
+</html>
+"""
+        os.system("mkdir littledata")
+        fi = open("littledata/popup.js", "w")
+        fi.write('''<script>alert("Nikto")</script>''')
+        f = open("index.html", "w")
+        f.write(code)
+        os.system('mkdir littledata/moredata/access_denied/pwnage)
+        fil = ("littledata/robots.txt", "w")
+        fil.write("password\npwn\nadmin\npassword123\nhash")
+writehtmlfile()
+
+
