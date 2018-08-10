@@ -1,2 +1,2 @@
 # HiCo-CTF Level: Beginner
-SETUP: Change Directory to the apache server's directory (On Kali: /var/www/html/) clone this repo there, then copy the HiCoCTF file to the apache server's drectory (kali: /var/www/html/) And execute the HiCoCTF file from the directory that you copied it into (with python3). 
+SETUP: Change Directory to the apache server's directory (On Kali: /var/www/html/) clone this repo there, then copy the HiCoCTF file to the apache server's drectory (kali: /var/www/html/) And execute the HiCoCTF file from the directory that you copied it into (with python3).  Kali commands: git clone <this repo> COMMAND2 cd HiCo-CTF COMMAND3 cp HiCoCTF /var/www/html COMMAND4 cd /var/www/html/ COMMAND4 python HiCoCTF COMMAND5 apachectl start
