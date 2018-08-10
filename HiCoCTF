@@ -1,0 +1,26 @@
+import os, socket, time
+def writehtmlfile():
+
+	hash = "bbbc027d437083bae047f57c9b48d971"
+	code = """
+<html>
+<body>
+<p>Welcome to the HiC0 CTF Challenge! The challenge is not hard! this is beginner level, hve fun!</p>
+<a href="littledata/popup.js">hint</a>
+</body>
+</html>
+"""	
+        os.system("mkdir littledata")
+        fi = open("littledata/popup.js", "w")
+        fi.write('https://github.com/NskB3/CTFTools\nhttps://github.com/NskB3/Hashkrek')
+        f = open("index.html", "w")
+        f.write(code)
+        os.system('mkdir -p littledata/moredata/access_denied/pwnage')
+	filetwo = open('littledata/moredata/access_denied/inspect_element.css', 'w')
+	filetwo.write('Good Job, You completed the HiCoCTF Challenge flag: 666c6167')
+	file = open("robots.txt", "w")
+        file.write(hash + '\nmd5\nlittledata/wlist.txt\nhttp://github.com/NskB3/Hashkrek')
+	wlist = open("littledata/wlist.txt", "w")
+	wlist.write("\nMD5_HASH\np\npa\npas\npass\npassw\npasswo\npasswor\npassword\n/littledata/moredata/access_denied/inspect_element.css")
+writehtmlfile()
+
