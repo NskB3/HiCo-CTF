@@ -5,7 +5,7 @@ def writehtmlfile():
 	code = """
 <html>
 <body>
-<p>Welcome to the HiC0 CTF Challenge! The challenge is not hard! this is beginner level, hve fun!</p>
+<p>Welcome to the Ez CTF Challenge! The challenge is not hard! this is beginner level, hve fun!</p>
 <a href="littledata/popup.js">hint</a>
 </body>
 </html>
